@@ -1,0 +1,7 @@
+.cardstyle{
+    display: flex;
+    margin: 10px;
+    padding: auto;
+ position: static;
+ justify-content: center;
+}
