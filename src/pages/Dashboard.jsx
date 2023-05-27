@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import Leadtable from '../components/Leadtable';
+import Budget from '../components/Budget';
+import Creditsummary from '../components/Creditsummary';
+import Leadcompition from '../components/Leadcompition';
+import Recentlead from '../components/Recentlead';
+import Card from '../components/Card';
 
 const Dashboard = () => {
   return (
     <div>
-      <h2>hello leads</h2>
+      <Card />
+      <Leadtable/>
+      <Budget/>
+      <Leadcompition/>
+      <Creditsummary/>
+      <Recentlead/>
     </div>
   )
 }

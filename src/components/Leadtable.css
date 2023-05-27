@@ -1,0 +1,9 @@
+.tablee {
+    border: 1px solid transparent;
+    border-radius: 15px;
+    max-width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin: 0% 10% 2% 10% ;
+    box-shadow: 2px 4px 7px rgb(77, 75, 75);
+}

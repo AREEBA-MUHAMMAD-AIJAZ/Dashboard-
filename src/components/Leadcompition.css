@@ -1,0 +1,16 @@
+.Leadcompition{
+    border: 1px solid rgb(185, 185, 185);
+    max-width: 90%;
+    border-radius: 7px;
+    padding: 15px;
+    font-size: 15px;
+    margin: 1% 10% 1% 10%;
+
+
+}
+.subs-country{
+    border: 1px solid skyblue;
+    border-radius: 20px;
+    padding: 3px 15px;
+    font-size: 14px;
+}

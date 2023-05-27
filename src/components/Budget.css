@@ -1,0 +1,29 @@
+.Budget {
+    border: 1px solid rgb(165, 163, 163);
+    max-width: 90%;
+    border-radius: 7px;
+    padding: 15px;
+    font-size: 15px;
+    margin: 1% 10% 1% 10%;
+}
+
+.subs-country {
+    border: 1px solid skyblue;
+    border-radius: 20px;
+    padding: 3px 15px;
+    font-size: 14px;
+}
+
+.top-head {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.butn-budget {
+    background-color: rgb(228, 228, 228);
+    border: 1px solid rgb(221, 221, 221);
+    padding: 8px;
+    color: blue;
+    text-align: start;
+}

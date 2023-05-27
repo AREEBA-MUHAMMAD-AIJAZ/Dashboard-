@@ -1,13 +1,13 @@
-.main_head{
- text-align: center;
-
+.main_head {
+    padding-bottom: 10px;
 }
 
-.semi_head{
-    text-align: center;
-   
-   }
-/* .main_div{
-    margin: 50px 30px 0px 30px;
-    padding: 50px 30px 0px 30px;
-}    */
+.semi_head {
+    font-size: 25px;
+}
+
+.main_div {
+    margin: 2% 10% 1% 12%;
+    padding: 20px;
+    text-align: left;
+}

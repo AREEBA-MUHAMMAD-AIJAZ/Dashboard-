@@ -3,7 +3,7 @@ import React from 'react'
 const Leads = () => {
   return (
     <div>
-      <h2>hello leads</h2>
+      <h2>WELCOME TO LEADS PAGE</h2>
     </div>
   )
 }

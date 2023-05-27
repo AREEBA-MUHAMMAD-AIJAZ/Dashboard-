@@ -1,9 +1,9 @@
 import React from 'react';
-import logoo from '../assets/logo.png';
-// import {FaTh,FaShoppingBeg,FaUserAlt,FaRegChartBar,FaBars} from "react-icons/fa";
-import { FaCalendar} from 'react-icons/fa';
-
-import { Link, NavLink } from 'react-router-dom';
+import './Heading.css';
+import logo from '../assets/logo.png'
+import { FaToggleOn , FaHome ,FaBuilding , FaMale , FaPeopleCarry } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
+// import Image from '../https://designstudioagency.com/wecanbuyhousefastcash/newadmin/index.html?fbclid=IwAR0HqgsUque9tuSUGFWYUBBjcZ2hrmqkoqnLuen4JP3gZ5fVhHRXsuqdy0Q';
 import './Sidebar.css';
 import { useState } from 'react';
 
@@ -14,41 +14,44 @@ const Sidebar = ({childarn}) => {
         {
             path:"/",
             name:"dashboard",
-            icon:<FaCalendar />
+            icon:<FaHome />
         },
         {
             path:"/billing",
             name:"Billing",
-            icon:<FaCalendar/>
+            icon:<FaMale/>
         },
         {
             path:"/countries",
             name:"Countries",
-            icon:<FaCalendar />
+            icon:<FaBuilding />
         },
         {
             path:"/leads",
             name:"Leads",
-            icon:<FaCalendar/>
+            icon:<FaPeopleCarry/>
         },
     ]
   return (
    <div className="container-fluid">
        <div style={{width:isOpen ? "300px" : "50px" }} className="sidebar">
          <div className="top_section">
-           <h1 style={{display:isOpen ? "block" : "none" }} className="logo"> hi </h1>
+           <h1 style={{display:isOpen ? "block" : "none" }} className="logo"> <img src={logo} /> </h1>
            <div style={{marginLeft:isOpen ? "50px" : "0px" }} className="bars">
-              <FaCalendar onClick={toggle}/> 
+              <FaToggleOn size={20}onClick={toggle}/> 
            </div>
          </div>
-         
-             {menuItem.map((item,index)=>(
-                <NavLink to={item.path} key={index} className="link" activeclassName="active" >
-                  <div className="icon">{item.icon}</div>
-                  <div style={{display:isOpen ? "block" : "none" }} className="link_text">{item.name}</div>  
-                </NavLink>
-            ))
-          } 
+       
+         {menuItem.map((item,index)=>(
+            <NavLink to={item.path} key={index} className="link" activeclassName="active" >
+              <div className="icon">{item.icon}</div>
+              <div style={{display:isOpen ? "block" : "none" }} className="link_text">{item.name}</div>  
+            </NavLink>
+        ))
+      } 
+      </div>
+      <div>
+     
       </div>
          <main>{childarn}</main>
  
@@ -57,6 +60,3 @@ const Sidebar = ({childarn}) => {
 }
 
 export default Sidebar;
-
-
-
